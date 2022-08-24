@@ -1,0 +1,158 @@
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+.main-header {
+    background-image: url("../img/bg_1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-header * {
+    z-index: 1;
+}
+
+.main-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    background-color: #FFD39A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #54BAB9;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar h1 {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.navbar i {
+    font-size: 60px;
+}
+
+.fa-guitar::before {
+    content: "\f7a6"
+}
+
+.navbar a {
+    padding: 0 30px;
+    text-decoration: none;
+    color: #54BAB9;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #FFD39A;
+    font-size: 25px;
+    margin: 0 50px;
+}
+
+.content .btn {
+    padding: 8px 16px;
+    margin-top: 20px;
+    background-color: #54BAB9;
+    color: #FFD39A;
+    font-size: 16px;
+    border-radius: 8px ;
+    cursor: pointer;
+}
+
+.content .btn:hover {
+    opacity: 0.8;
+}
+
+.content a {
+    color: #FFD39A;
+    font-size: 60px;
+}
+
+.content a:hover {
+    opacity: 0.5;
+}
+
+.content h1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+.content h3 {
+    margin: 10px 0;
+}
+
+.main-section {
+    margin-top: 50px;
+}
+
+.column-2 {
+    flex: 50%;
+    flex-wrap: wrap;
+}
+
+.urunler {
+    display: flex;
+    justify-content:center;
+    color: #FFD39A;
+    font-size: 30px;
+}
+
+.urun {
+    padding: 10px;
+    margin: 100px;
+    background-color: #FFD39A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.urun img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    
+}
+
+.urun img:hover {
+    opacity: 0.8;
+}
+
+.urun h3 {
+    margin-top: 10px 0;
+    font-size: 20px;
+    color: #9A0680;
+}
+
+.content.iletisim {
+    align-items: flex-start;
+}
